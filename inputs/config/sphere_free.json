@@ -1,0 +1,26 @@
+{
+  "name": "sphere_free",
+  "output": "outputs/sphere_free",
+  "wavelength_um": 0.6328,
+  "illuminations": "inputs/illuminations/sphere_example.csv",
+  "modes": ["transmission", "reflection"],
+  "object": {
+    "source": "sphere",
+    "n_medium": 1.5,
+    "radius_um": 1.5,
+    "dn": 0.03,
+    "voxel_um": 0.1,
+    "edge_um": 0.05
+  },
+  "simulation": {
+    "resolution": 12,
+    "pml_um": 1.0,
+    "lateral_margin_um": 1.5,
+    "walkoff_margin_um": 1.0,
+    "z_margin_um": 0.4,
+    "sensor_gap_um": 0.4,
+    "polarization": "Ex",
+    "mpi_processes": 1,
+    "max_memory_gb": 4.0
+  }
+}

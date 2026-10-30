@@ -1,0 +1,89 @@
+{
+  "name": "phantom_4pi_subset",
+  "output": "outputs/phantom_4pi_subset",
+  "views": {
+    "bottom": "inputs/holograms/phantom_4pi/bottom",
+    "top": "inputs/holograms/phantom_4pi/top"
+  },
+  "object": {
+    "source": "registered_gt",
+    "file": "inputs/phantom/phantom_ground_truth_registered.mat",
+    "crop_xyz": [
+      [
+        195,
+        405
+      ],
+      [
+        179,
+        445
+      ],
+      [
+        267,
+        383
+      ]
+    ]
+  },
+  "simulation": {
+    "resolution": 12,
+    "pml_um": 1.0,
+    "lateral_margin_um": 0.8,
+    "walkoff_margin_um": 1.0,
+    "z_margin_um": 0.4,
+    "sensor_gap_um": 0.4,
+    "pulse_fwidth": 0.4,
+    "polarization": "Ex",
+    "mpi_processes": 4,
+    "max_memory_gb": 9.0
+  },
+  "selection": {
+    "n": 32,
+    "tukey": 0.1,
+    "lists": {}
+  },
+  "reflection": {
+    "views": {
+      "refl_top": {
+        "illumination": "bottom",
+        "camera": "top"
+      },
+      "refl_bottom": {
+        "illumination": "top",
+        "camera": "bottom"
+      }
+    },
+    "reference_ratio": 2.0,
+    "parasitic_specular": [
+      0.01
+    ]
+  },
+  "reference_views": {
+    "enabled": false,
+    "planes": [
+      "YZ",
+      "XZ"
+    ],
+    "position_um": null,
+    "field_modes": [
+      "total",
+      "scattered"
+    ],
+    "intensity_mode": "compressed_arcsinh",
+    "arcsinh_alpha": null,
+    "colormap": "turbo",
+    "overlay_contour": true,
+    "save_png": true,
+    "save_svg": true,
+    "z_pad_um": 3.0
+  },
+  "calibration": {
+    "z_range_um": [
+      -14,
+      14
+    ],
+    "background_annulus_um": [
+      17,
+      33
+    ],
+    "background_poly_order": 4
+  }
+}

@@ -1,0 +1,8 @@
+# FDTD_meep v1.2.0 - example illumination list (5 directions)
+# kx, ky = kx/k, ky/k with k = 2*pi*n_medium/lambda  (kx^2 + ky^2 < 1)
+name,kx,ky
+i000,0.00,0.00
+i001,0.30,0.00
+i002,0.00,0.30
+i003,0.45,0.35
+i004,-0.40,-0.20

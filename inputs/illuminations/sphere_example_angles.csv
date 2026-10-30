@@ -1,0 +1,7 @@
+# FDTD_meep v1.2.0 - same idea, written with angles (degrees)
+# kx = sin(theta) cos(phi), ky = sin(theta) sin(phi)
+name,theta_deg,phi_deg
+i000,0,0
+i001,17.5,0
+i002,17.5,90
+i003,34.8,37.9

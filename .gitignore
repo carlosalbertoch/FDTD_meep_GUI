@@ -1,0 +1,10 @@
+.env/
+__pycache__/
+*.pyc
+.DS_Store
+outputs/*
+!outputs/.gitkeep
+inputs/holograms/*
+!inputs/holograms/README.md
+inputs/phantom/*.mat
+inputs/objects/*.h5

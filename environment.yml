@@ -1,0 +1,18 @@
+# FDTD_meep v1.2.0 | 2026-10-30 | Carlos Chacón
+name: fdtd-meep-gui
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pymeep=1.34.*=mpi_mpich*
+  - mpich
+  - numpy
+  - scipy
+  - h5py
+  - pillow
+  - matplotlib
+  - scikit-image
+  - pyqt=5.15.*
+  - pip
+  - pip:
+      - miepython==3.3.0
